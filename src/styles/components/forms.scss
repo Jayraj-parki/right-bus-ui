@@ -1,0 +1,11 @@
+.site-navbar {
+  background: linear-gradient(0deg, rgba(26,43,60,0.04), rgba(26,43,60,0.04)), $color-white;
+  box-shadow: $shadow-sm;
+}
+.site-footer {
+  background: $color-secondary;
+  color: $color-white;
+  a { color: $color-white; opacity: .9; }
+  a:hover { opacity: 1; text-decoration: none; }
+}
+.container-narrow { max-width: 1080px; }

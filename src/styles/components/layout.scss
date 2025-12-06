@@ -1,0 +1,41 @@
+.site-navbar {
+  background: linear-gradient(0deg, rgba(26,43,60,0.04), rgba(26,43,60,0.04)), $color-white;
+  box-shadow: $shadow-sm;
+  text-decoration: none !important  ;
+}
+.btn-gradients {
+  background: linear-gradient(90deg, #2096ff 0%, #9d4edd 100%);
+  border-radius: 40px;
+  // font-weight: 600;
+  // font-size: 1.08rem;
+  text-decoration: none !important  ;
+  // box-shadow: 0 2px 12px 0 rgba(40,50,100,0.07);
+  // transition: filter 0.13s, box-shadow 0.13s;
+}
+.btn-gradient:hover, .btn-gradient:focus {
+  filter: brightness(1.07);
+  box-shadow: 0 4px 20px 0 rgba(80,80,120,0.14);
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.2s, font-weight 0.2s;
+  text-decoration: none !important;
+  &:hover {
+    background-color:$color-muted-light;
+  }
+
+}
+
+.nav-link.active-link {
+  background-color: $color-cta;
+  
+}
+
+.site-footer {
+  background: $color-secondary;
+  color: $color-white;
+  a { color: $color-white; opacity: .9; }
+  a:hover { opacity: 1; text-decoration: none; }
+}
+.container-narrow { max-width: 1080px; }

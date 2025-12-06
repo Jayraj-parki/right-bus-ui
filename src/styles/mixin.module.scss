@@ -1,0 +1,37 @@
+@use "var.module.scss" as *;
+@mixin card($pad: $sp-6) {
+  background: $color-white;
+  border-radius: $radius-md;
+  box-shadow: $shadow-md;
+  padding: $pad;
+}
+
+@mixin cta-button {
+  background: $color-cta;
+  color: $color-white;
+  border: none;
+  border-radius: $radius-md;
+  padding: $sp-4 $sp-6;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+  &:hover { transform: translateY(-1px); box-shadow: $shadow-lg; }
+}
+
+@mixin headline {
+  font-family: $font-sans;
+  color: $color-text-dark;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@mixin muted { color: $color-muted; }
+
+@mixin grid($min: 280px, $gap: $sp-6) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($min, 1fr));
+  gap: $gap;
+}
+
+@mixin container-pad {
+  padding-top: $sp-12;
+  padding-bottom: $sp-12;
+}

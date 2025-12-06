@@ -1,0 +1,98 @@
+src/
+  app/
+    layout.jsx           // Global providers, theme, Bootstrap, Toast
+    page.jsx             // Landing – Hero, Navbar, SearchPanel
+    routes/
+      search/            // Search + filters/results
+      seat-map/          // Real-time seat selection
+      bus/[id]/          // Bus details, operator, reviews, Safety+/Primo
+      track/             // Track My Bus, Trip Sharing
+      payment/           // Checkout, payment + ticket generation
+      tickets/           // My bookings, ticket history, passes
+      offers/            // Promo codes, loyalty, combo deals
+      support/           // Help, WhatsApp/in-app chat
+      profile/           // Saved info, multi-language, region
+      hotel-combo/       // Hotel+Bus combo booking
+      operator-compare/  // Comparison hub
+      notifications/     // Push/notifications + delayed/canceled info
+      admin/             // (optional) Management, deals, agents
+  components/
+    layout/Navbar.jsx
+    layout/Footer.jsx
+    layout/Sidebar.jsx
+    landing/Hero.jsx
+    landing/SearchPanel.jsx
+    features/
+      SearchResults.jsx
+      BusFilterBar.jsx
+      SeatLayout.jsx
+      PaymentModes.jsx
+      OffersPromo.jsx
+      ETicketActions.jsx
+      LiveTracking.jsx
+      RatingStars.jsx
+      SafetyBadge.jsx
+      PrimoBadge.jsx
+      ReviewList.jsx
+      LanguageSwitch.jsx
+      TrackBus.jsx
+      TripShare.jsx
+      BookingHistory.jsx
+      SupportChat.jsx
+      NotificationList.jsx
+      OperatorCard.jsx
+      HotelComboDeals.jsx
+      WomenOnlyToggle.jsx
+      RestStopPopup.jsx
+      MultiRegionSwitch.jsx
+      PassSelector.jsx
+  hooks/
+    useFeatureToggle.js
+    useSearchSeats.js
+    useLiveTracking.js
+    usePayment.js
+    useMultiLanguage.js
+    useNotifications.js
+  store/
+    index.js
+    rootReducer.js
+    features/
+      search.slice.js
+      seats.slice.js
+      booking.slice.js
+      payment.slice.js
+      offers.slice.js
+      tracking.slice.js
+      notifications.slice.js
+      reviews.slice.js
+      profile.slice.js
+      operator.slice.js
+      multimodal.slice.js
+      hotel.slice.js
+  api/
+    axios.js
+    endpoints.js
+    search.api.js
+    seat.api.js
+    bus.api.js
+    payment.api.js
+    offer.api.js
+    booking.api.js
+    notification.api.js
+    review.api.js
+    tracking.api.js
+  constants/
+    static_text.js
+    features.js
+    routes.js
+    languages.js
+    operators.js
+  styles/
+    var.modules.scss
+    mixin.module.scss
+    globals.scss
+    bootstrap.scss
+    landing.scss
+    features.scss
+    layout.scss
+  mocks/                  // test/fake data for buses, seats, offers, etc.

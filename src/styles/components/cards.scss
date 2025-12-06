@@ -1,0 +1,7 @@
+.card-elevated {
+  @include card($sp-5);
+}
+.card-hero {
+  @include card($sp-6);
+  background: linear-gradient(180deg, rgba(20,184,166,.12), rgba(255,255,255,1));
+}

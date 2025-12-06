@@ -1,0 +1,20 @@
+export const ENDPOINTS = {
+  SEARCH: "/search",
+  BUSES: "/buses",
+  BUS_DETAIL: (id) => `/buses/${id}`,
+  BOOKINGS: "/bookings",
+  BOOKING_DETAIL: (id) => `/bookings/${id}`,
+  CITIES: "/locations/cities",
+  TESTIMONIALS: "/testimonials",
+  FAQ: "/faq",
+  STATS: "/stats",
+  SEAT_LAYOUT: (busId) => `/buses/${busId}/seats`,
+  BOOK: "/bookings",
+  MY_BOOKINGS: "/bookings/history",
+  PAYMENT: "/payments/initiate",
+  OFFERS: "/offers",
+  HOTEL_COMBOS: "/combos",
+  HOTEL_COMBO_DETAIL: (id) => `/combos/${id}`,
+  NOTIFICATIONS: "/notifications",
+  OPERATOR: "/operators"
+};

@@ -1,0 +1,8 @@
+[
+  { "id": 1, "from": "Chisinau", "to": "Berlin", "price": 34.99, "img": "/images/destinations/berlin.jpg" },
+  { "id": 2, "from": "Chisinau", "to": "Luxembourg", "price": 42.99, "img": "/images/destinations/luxembourg.jpg" },
+  { "id": 3, "from": "Chisinau", "to": "Dusseldorf", "price": 33.99, "img": "/images/destinations/dusseldorf.jpg" },
+  { "id": 4, "from": "Chisinau", "to": "Amsterdam", "price": 32.99, "img": "/images/destinations/amsterdam.jpg" },
+  { "id": 5, "from": "Chisinau", "to": "Rotterdam", "price": 28.99, "img": "/images/destinations/rotterdam.jpg" },
+  { "id": 6, "from": "Chisinau", "to": "Berlin", "price": 56.99, "img": "/images/destinations/berlin.jpg" }
+]

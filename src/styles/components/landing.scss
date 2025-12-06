@@ -1,0 +1,782 @@
+.heroSection {
+  position: relative;
+  width: 100vw;
+  height: 320px;
+  overflow: hidden;
+}
+
+.heroImgWrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  .heroImg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: bottom;
+  }
+  .heroOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(115deg, rgba(22, 43, 60, 0.6) 10%, rgba(28, 50, 62, 0.8) 80%);
+    z-index: 2;
+  }
+}
+
+.heroContent {
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+  // max-width: 1580px;
+  left: 50px;
+  top: 48px;
+  text-align: left;
+  padding: 38px 28px 34px 28px;
+  box-shadow: none;
+  background: none;
+  border-radius: 0;
+}
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 32px;
+  letter-spacing: 0.3px;
+}
+
+// .search-panel {
+//   margin-top: -$sp-8;
+//   position: relative;
+//   height: 250px;
+// }
+// .searchPanelFront {
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   top: -5px; // positions panel below hero text
+//   z-index: 10;
+//   padding: 0 32px;
+//   @include card($sp-4);
+//   border: 1px solid rgba(26,43,60,.08);
+//   box-shadow: 0 12px 40px 0 rgba(16, 33, 42, 0.08);
+// }
+.search-panel {
+  margin-top: -$sp-8;
+  position: relative;
+  height: 250px;
+}
+
+.searchPanelFront {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -5 px;
+  z-index: 20;
+  padding: 32px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+}
+
+.btn-group .btn:hover {
+  background-color: $color-bg;
+}
+
+/* Select, Input adjustments */
+
+.input-with-icon input {
+  height: 48px;
+  border-radius: 12px;
+  padding-left: 20px !important;
+  // border: 1px solid rgba(26, 43, 60, 0.15);
+  transition: 0.2s ease;
+}
+.women-only-section {
+  .women-radio {
+    cursor: pointer;
+    background: #f1f4ff;
+    transition: 0.3s ease;
+    font-weight: 500;
+
+    &:hover {
+      background: #e5eaff;
+    }
+
+    .circle {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #2962ff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background: #2962ff;
+      border-radius: 50%;
+    }
+  }
+  .active {
+    border: 1px solid #2962ff;
+    background-color: rgba(41, 98, 255, 0.1);
+  }
+}
+.journey_date {
+  .date_input {
+    width: 100% !important;
+    min-width: 0;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    // background: $color-bg;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.8rem;
+    color: $color-text-dark;
+    outline: none;
+    cursor: pointer;
+    border: 1.5px solid rgba(26, 43, 60, 0.15);
+    transition:
+      border-color 0.2s,
+      box-shadow 0.2s;
+  }
+
+  // .date_input:focus {
+  //   border-color: $color-primary;
+  //   box-shadow: 0 0 0 0.22rem rgba(75, 0, 130, 0.13);
+  // }
+
+  .calendar {
+    border-radius: 1.2rem !important;
+    box-shadow:
+      0 14px 34px 0 rgba(75, 0, 130, 0.1),
+      0 2px 8px rgba(50, 40, 70, 0.08) !important;
+    border: none !important;
+    background: $color-secondary !important;
+    font-family: "Inter", "Roboto", Arial, sans-serif !important;
+    padding-bottom: 0.7rem;
+
+    .react-datepicker__triangle {
+      display: none !important;
+    }
+  }
+
+  .react-datepicker__header {
+    background-color: $color-white !important;
+    border-bottom: none !important;
+    border-radius: 1.2rem 1.2rem 0 0 !important;
+    padding: 1rem 0.75rem !important;
+    color: $color-secondary !important;
+  }
+
+  .react-datepicker__current-month {
+    color: $color-secondary !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  .react-datepicker__navigation--previous,
+  .react-datepicker__navigation--next {
+    background-color: lighten($color-bg, 10%) !important;
+    border-radius: 0.6rem;
+    width: 36px;
+    height: 36px;
+    top: 12px !important;
+  }
+
+  .react-datepicker__navigation--previous:hover,
+  .react-datepicker__navigation--next:hover {
+    background-color: lighten($color-bg, 20%) !important;
+  }
+
+  .react-datepicker__navigation-icon {
+    color: $color-secondary !important;
+    font-size: 1.5rem !important;
+    margin-top: 3px;
+  }
+
+  .react-datepicker__day-names,
+  .react-datepicker__week {
+    margin-bottom: 0.15rem;
+  }
+
+  .react-datepicker__day,
+  .react-datepicker__day-name {
+    border-radius: 0.65rem !important;
+    font-size: 1rem;
+    color: $color-bg !important;
+    font-weight: 500;
+    transition: background 0.17s;
+    background: none;
+  }
+
+  .react-datepicker__day--keyboard-selected,
+  .react-datepicker__day--selected {
+    background: $color-primary !important;
+    color: $color-white !important;
+    font-weight: 700;
+  }
+
+  .react-datepicker__day--today {
+    border: 1.6px solid darken($color-white, 10%) !important;
+    background: $color-white !important;
+    color: $color-black !important;
+  }
+
+  .react-datepicker__day--disabled,
+  .react-datepicker__day--outside-month {
+    color: $color-muted !important;
+    background: transparent !important;
+    cursor: not-allowed;
+  }
+
+  .react-datepicker__day:hover:not(.react-datepicker__day--disabled):not(
+      .react-datepicker__day--selected
+    ) {
+    background: $color-primary !important;
+    color: $color-white !important;
+  }
+
+  .react-datepicker-wrapper {
+    display: block !important;
+    width: 100% !important;
+  }
+}
+
+.search-btn{
+  background-color: $color-primary;
+  color: $color-white;
+  &:hover{
+    background-color: darken($color-primary, 8%);
+    color: $color-white;
+  }
+}
+
+// .adv-card {
+//   @include card($sp-4);
+//   height: 100%;
+// }
+.feature-slider {
+  .swiper {
+    padding-bottom: 32px;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px 10px rgba(60,60,90,.09);
+    width: 40px;
+    height: 40px;
+    color: #2962ff !important;
+    font-weight: 700;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 22px;
+    font-weight: 900;
+  }
+  // Hide disabled arrows
+  .swiper-button-disabled {
+    opacity: 0.28 !important;
+    pointer-events: none;
+  }
+  .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    text-align: center;
+  }
+  .swiper-pagination-bullets {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  .swiper-pagination-bullet {
+    background: #ccd6fd;
+    width: 10px; height: 10px; opacity: 1;
+    border-radius: 50%;
+    transition: background 0.18s;
+  }
+  .swiper-pagination-bullet-active {
+    background: #2563eb;
+  }
+}
+
+.feature-card {
+  border-radius: 16px;
+  min-height: 132px;
+  box-shadow: 0 2px 16px 0 rgba(80,80,120,0.07);
+  border: none;
+  transition: box-shadow 0.17s, transform 0.14s;
+  &:hover {
+    background: linear-gradient(120deg, #eef2ff 0%, #fafafc 90%);
+    box-shadow: 0 8px 30px rgba(110,109,209,0.11);
+    transform: translateY(-4px) scale(1.03);
+  }
+  .icon {
+    font-size: 2rem;
+    display: inline-flex;
+    align-items: center;
+    color: #1e40af;
+  }
+  .desc {
+    margin-top: .16rem;
+    color: #6b7a88;
+  }
+}
+
+
+.offers-slider-box {
+  // box-shadow: 0 2px 32px 0 rgba(100,70,160,0.09), 0 1.5px 8px 0 rgba(40,50,100,0.03);
+  background: #fff;
+  // max-width: 740px;
+  width: 100%;
+  border-radius: 2rem;
+}
+.offers-swiper {
+  margin-bottom: 18px;
+  .swiper-button-next, .swiper-button-prev {
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px 10px rgba(60,60,90,.09);
+    width: 40px;
+    height: 40px;
+    color: #2962ff !important;
+    font-weight: 700;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 22px;
+    font-weight: 900;
+  }
+  .swiper-pagination-bullet {
+    background: #ccd6fd;
+    width: 10px; height: 10px; opacity: 1;
+    border-radius: 50%;
+    margin: 0 6px;
+  }
+  .swiper-pagination-bullet-active {
+    background: #2563eb;
+  }
+}
+
+.offer-ticket-card {
+  background: #e9f0ff;
+  border-radius: 1.25rem;
+  min-height: 190px;
+  box-shadow: 0 4px 20px rgba(20,40,70,0.07);
+  position: relative;
+  padding: 16px 18px;
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+  .label {
+    background: rgba(255,255,255,0.16);
+    font-size: .92rem;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 7px;
+    padding: 3px 12px;
+    margin-bottom: 7px;
+    letter-spacing: 0.1em;
+  }
+  .title {
+    font-size: 1.12rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2px;
+    color: #fff;
+  }
+  .subtitle {
+    font-size: .91rem;
+    text-align: center;
+    color: #e4e9ed;
+    margin-bottom: 3px;
+    white-space: pre-line;
+  }
+  .code {
+    font-size: .93rem;
+    text-align: center;
+    color: #f0f5fa;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  
+  .ticket-btn {
+    font-weight: 700;
+    width: 100%;
+    border-radius: 21px;
+    
+    color: #fff;
+    border: none;
+    margin-top: 6px;
+    font-size: .97rem;
+    padding: 7px 0;
+    letter-spacing: .03em;
+    box-shadow: 0 2px 12px 0 rgba(30,40,90,0.07);
+    transition: filter 0.13s;
+    &:hover {
+      filter: brightness(2.11);
+      background: rgba(255,255,255,0.16);
+    }
+    
+  }
+  // Notch design for ticket look
+  .ticket-notch {
+    position: absolute;
+    top: 43px;
+    width: 18px;
+    height: 32px;
+    background: #fff;
+    border-radius: 16px;
+    z-index: 6;
+    opacity: 0.85;
+    box-shadow: 0 1px 4px rgba(100,100,200,0.05);
+  }
+  .ticket-notch-left {
+    left: -10px;
+  }
+  .ticket-notch-right {
+    right: -10px;
+  }
+  // Color variants for each offer
+  &.blue { background: linear-gradient(145deg,#2196f3 80%, #67c6ff 100%);}
+  &.green { background: linear-gradient(145deg,#226944 75%, #65dda1 100%);}
+  &.orange { background: linear-gradient(145deg,#fbaf56 90%, #fbe4b0 100%);}
+  &.teal { background: linear-gradient(145deg,#47b17f 70%, #c5eedd 100%);}
+  &.brown { background: linear-gradient(145deg,#e18c35 93%, #e8c87a 100%);}
+  &.purple { background: linear-gradient(145deg,#9d4edd 80%, #c7a8f9 100%);}
+    &.pink {
+    background: linear-gradient(145deg,#ff4f9a 75%, #ffb3d5 100%);
+  }
+
+  &.indigo {
+    background: linear-gradient(145deg,#3f51b5 80%, #9aa5ff 100%);
+  }
+
+  &.cyan {
+    background: linear-gradient(145deg,#00bcd4 75%, #8ff4ff 100%);
+  }
+
+  &.red {
+    background: linear-gradient(145deg,#e53935 80%, #ff9b99 100%);
+  }
+
+  &.gold {
+    background: linear-gradient(145deg,#d4a017 75%, #ffe7a3 100%);
+  }
+
+  &.slate {
+    background: linear-gradient(145deg,#475569 75%, #9ca8b8 100%);
+  }
+
+  &.violet {
+    background: linear-gradient(145deg,#7c3aed 80%, #c1a6ff 100%);
+  }
+
+}
+
+// Code entry
+.promo-input {
+  border-radius: 12px;
+  font-size: 1rem;
+  padding: 9px 14px;
+  box-shadow: none;
+  max-width: 340px;
+}
+.op-card {
+  width: 250px;
+  height: 150px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 14px 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .op-top {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .op-left-img {
+      width: 55px;
+      height: 55px;
+      border-radius: 12px;
+      overflow: hidden;
+      flex-shrink: 0;
+
+      .op-img {
+        object-fit: cover;
+      }
+    }
+
+    .op-info {
+      margin-left: 12px;
+      flex-grow: 1;
+
+      .op-name {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0;
+        color: #1a1c29;
+      }
+
+      .op-location {
+        font-size: 0.78rem;
+        color: #7c8a9a;
+        margin-top: 2px;
+      }
+
+      .op-rating {
+        margin-top: 3px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 0.85rem;
+        color: #ffb400;
+
+        span {
+          font-weight: 600;
+          color: #333;
+        }
+      }
+    }
+
+    /* RADIO BUTTON — CLEAN + VISIBLE */
+    .op-radio {
+      position: absolute;
+      right: 0;
+      top: 4px;
+
+      input[type="radio"] {
+        width: 18px;
+        height: 18px;
+        accent-color: #2962ff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .op-bottom {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+
+    .op-tag {
+      padding: 4px 10px;
+      border-radius: 10px;
+      font-size: 0.7rem;
+      font-weight: 600;
+
+      &.safety {
+        background: #e8f9ee;
+        color: #2f9e44;
+      }
+
+      &.primo {
+        background: #e7efff;
+        color: #2962ff;
+      }
+
+      &.luxury {
+        background: #fff3e0;
+        color: #ff8f00;
+      }
+    }
+  }
+}
+
+.services-band {
+  background: $color-secondary;
+  color: $color-white;
+  .stat {
+    font-size: $fs-3xl;
+    font-weight: 700;
+  }
+}
+
+.dest-list {
+  background: linear-gradient(180deg, rgba(26, 43, 60, 1), rgba(26, 43, 60, 0.92));
+  color: $color-white;
+  .col-title {
+    font-weight: 700;
+    margin-bottom: $sp-4;
+  }
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: $sp-3 $sp-4;
+    border-radius: $radius-sm;
+    background: rgba(255, 255, 255, 0.06);
+    margin-bottom: $sp-2;
+  }
+}
+
+
+.parcel-grid .tile {
+  position: relative;
+  border-radius: $radius-md;
+  overflow: hidden;
+  img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  .badge {
+    position: absolute;
+    left: $sp-4;
+    bottom: $sp-4;
+    background: rgba(26, 43, 60, 0.85);
+    color: $color-white;
+    border-radius: $radius-sm;
+    padding: $sp-2 $sp-3;
+  }
+}
+
+.testimonial-section {
+  padding: 70px 0;
+  background: linear-gradient(180deg, #0E233F 0%, #14314B 100%);
+  text-align: center;
+  color: white;
+
+  .section-title {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .testimonial-card {
+    background: #ffffff;
+    color: #0d1b2a;
+    border-radius: 16px;
+    padding: 28px;
+    height: 230px;
+
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
+
+    .stars {
+      color: #FFC107;
+      display: flex;
+      gap: 2px;
+    }
+
+    .quote-icon {
+      color: #2CA7E2;
+      opacity: 0.7;
+
+      &.end {
+        text-align: right;
+        margin-top: -10px;
+      }
+    }
+
+    .review-title {
+      font-weight: 600;
+      font-size: 18px;
+      margin: 8px 0 6px 0;
+    }
+
+    .review-text {
+      font-size: 14px;
+      opacity: 0.85;
+      margin-bottom: 10px;
+    }
+
+    hr {
+      opacity: 0.2;
+      margin: 20px 0 12px 0;
+    }
+
+    .reviewer-name {
+      font-weight: 600;
+      color: #1688c9;
+      font-size: 14px;
+    }
+
+    .reviewer-label {
+      font-size: 12px;
+      opacity: 0.6;
+      margin-top: -2px;
+    }
+  }
+
+  .review-btn {
+    background: #1EC4A8;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+  }
+}
+
+
+.faq .accordion-button:not(.collapsed) {
+  color: $color-primary;
+  background: rgba(12, 166, 120, 0.08);
+}
+
+.amenities .icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  background: #edf7f4;
+  display: grid;
+  place-items: center;
+  margin: 0 auto $sp-3;
+}
+.swiper-button-next, .swiper-button-prev {
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px 10px rgba(60,60,90,.09);
+    width: 40px;
+    height: 40px;
+    color: #2962ff !important;
+    font-weight: 700;
+    border: none;
+    top: 50%;
+    padding: 10px;
+  }
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 22px;
+    font-weight: 900;
+  }
+
+  .destination-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.destination-img {
+  object-fit: cover !important;
+  height: 220px !important;
+}
+
+.dest-overlay {
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 90%);
+  font-size: 14px;
+}

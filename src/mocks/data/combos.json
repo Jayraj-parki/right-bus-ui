@@ -1,0 +1,22 @@
+[
+  {
+    "id": 201,
+    "hotelName": "Silver Star Hotel",
+    "city": "Agra",
+    "hotelImg": "/images/hotels/agra-silverstar.jpg",
+    "star": 4,
+    "busRoute": "Delhi → Agra",
+    "includes": ["Deluxe Room", "Express Bus", "Breakfast", "Free WiFi"],
+    "dealPrice": 1299
+  },
+  {
+    "id": 202,
+    "hotelName": "Beach View Lodge",
+    "city": "Goa",
+    "hotelImg": "/images/hotels/goa-beachview.jpg",
+    "star": 5,
+    "busRoute": "Mumbai → Goa",
+    "includes": ["Sea View", "Premium Bus", "Dinner"],
+    "dealPrice": 2499
+  }
+]
